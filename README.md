@@ -2,7 +2,9 @@
 
 Minimal image hosting powered by **GitHub + jsDelivr** ⚡
 
------
+## ⚠️ Limitations
+
+To ensure fast load times and fair use, each individual file must not exceed **1MB** in size.
 
 ## 📂 Directory Structure
 
@@ -17,21 +19,24 @@ px/
     └── example.jpg
 ```
 
------
-
 ## 📸 Usage
 
-1.  **Upload to a Subdirectory** 
-    Create a new folder within this repository and push your images to it.
+1. Upload to a Subdirectory 
 
-2.  **Get the CDN link** 
-    Use the following format to access your image via jsDelivr:
+   Create a new folder within this repository and push your images to it, ensuring they are under the size limit.
 
-    > `https://cdn.jsdelivr.net/gh/cvyuan/px@main/<your-directory-name>/<your-image-name>`
+2. Get the CDN link 
 
-3.  **Embed in Markdown / HTML**  
-    For example, if you uploaded an image named `test.png` inside a directory named `demo`:
+   Use the following format to access your image via jsDelivr:
 
-    ```markdown
-    ![demo](https://cdn.jsdelivr.net/gh/cvyuan/px@main/demo/test.png)
-    ```
+   > `https://cdn.jsdelivr.net/gh/cvyuan/px@main/<your-directory-name>/<your-image-name>`
+
+3. Embed in Markdown / HTML 
+
+   For example, if you uploaded an image named test.png inside a directory named demo:
+
+   Markdown
+
+   ```
+   ![demo](https://cdn.jsdelivr.net/gh/cvyuan/px@main/demo/test.png)
+   ```
